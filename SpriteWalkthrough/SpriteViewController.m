@@ -27,7 +27,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    SpriteScene* scene = [[SpriteScene alloc] initWithSize:CGSizeMake(768,1024)];
+    SpriteScene* scene = [[SpriteScene alloc] initWithSize:self.view.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
     SKView *spriteView = (SKView *) self.view;
     [spriteView presentScene: scene];
 }

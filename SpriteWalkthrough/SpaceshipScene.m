@@ -35,8 +35,8 @@ NSString* const ROTATE_ACTION = @"ROTATE_ACTION";
 
 - (void)createSceneContents
 {
-    self.backgroundColor = [SKColor blackColor];
-    self.scaleMode = SKSceneScaleModeAspectFit;
+    self.backgroundColor = [SKColor whiteColor];
+    self.scaleMode = SKSceneScaleModeAspectFill;
 
     self.physicsWorld.gravity = CGVectorMake(0.0f, GRAVITY);
 
